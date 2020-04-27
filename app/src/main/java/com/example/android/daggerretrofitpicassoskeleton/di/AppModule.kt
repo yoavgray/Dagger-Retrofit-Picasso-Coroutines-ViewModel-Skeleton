@@ -43,5 +43,5 @@ class AppModule {
 }
 
 // Must end with a '/' !
-const val BASE_URL = "https://www.example.com/"
+const val BASE_URL = "https://rickandmortyapi.com/api/"
 const val CONNECTION_TIMEOUT_MS = 5000L

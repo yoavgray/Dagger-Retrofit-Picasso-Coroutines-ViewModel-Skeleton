@@ -1,9 +1,11 @@
 package com.example.android.daggerretrofitpicassoskeleton.network
 
+import com.example.android.daggerretrofitpicassoskeleton.data.Character
+import com.example.android.daggerretrofitpicassoskeleton.data.SearchResult
 import retrofit2.http.GET
-import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface ApiService {
-    @GET("/additional/path/{queryParam}?another_query_param=true")
-    suspend fun fetchSomething(@Path(value = "queryParam", encoded = true) queryParam: String): Map<String, Any>
+    @GET("character")
+    suspend fun fetchCharacters(@Query(value = "page") page: Int): SearchResult
 }
