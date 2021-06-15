@@ -2,7 +2,7 @@ package com.example.android.daggerretrofitpicassoskeleton.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.android.daggerretrofitpicassoskeleton.di.ApiService
+import com.example.android.daggerretrofitpicassoskeleton.network.ApiService
 import javax.inject.Inject
 
 class MainViewModelFactory @Inject constructor(private val apiService: ApiService) :

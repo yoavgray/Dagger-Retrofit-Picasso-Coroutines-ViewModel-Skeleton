@@ -1,7 +1,7 @@
 package com.example.android.daggerretrofitpicassoskeleton.ui
 
 import androidx.lifecycle.ViewModel
-import com.example.android.daggerretrofitpicassoskeleton.di.ApiService
+import com.example.android.daggerretrofitpicassoskeleton.network.ApiService
 
 class MainViewModel(private val apiService: ApiService) : ViewModel() {
 
